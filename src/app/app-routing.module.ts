@@ -12,7 +12,6 @@ const routes: Routes = [
       {path: '', component: HotelsComponent},
       {path: 'flight', component: FlightComponent},
       {path: 'hotels', component: HotelsComponent},
-      
     ]
   },
   {
