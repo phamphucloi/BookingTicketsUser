@@ -5,25 +5,15 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FlightComponent } from './Flight/flight.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HotelsComponent } from './Hotels/hotels.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    FlightComponent,
-    HotelsComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    FormsModule,
-    ReactiveFormsModule,
-    BrowserAnimationsModule,
+    AppRoutingModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

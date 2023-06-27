@@ -1,12 +1,12 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-    templateUrl: './flight.component.html'
+    templateUrl: './details.component.html'
 })
 
-export class FlightComponent implements OnInit {
+export class DetailsComponent implements OnInit {
     ngOnInit(): void {
-
+        
     }
     
 }
