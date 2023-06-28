@@ -910,12 +910,13 @@
                         </div>
                       </div>
                       <!-- end col-lg-3 -->
+
                       <div class="col-lg-3 pr-0">
                         <div class="input-box">
-                          <label class="label-text">Check in</label>
+                          <label class="label-text">Note</label>
                           <div class="form-group">
                             <span class="la la-calendar form-icon"></span>
-                            <input class="date-range form-control" type="text" name="daterange-single">
+                            <input class="form-control" type="text">
                           </div>
                         </div>
                       </div>
@@ -924,8 +925,11 @@
                         <div class="input-box">
                           <label class="label-text">Check out</label>
                           <div class="form-group">
-                            <span class="la la-calendar form-icon"></span>
-                            <input class="date-range form-control" type="text" name="daterange-single">
+                            <select name="" id="" (change)="chooseOption($event)">
+                              <option value="0">Thường</option>
+                              <option value="1">VIP</option>
+                            </select>
+
                           </div>
                         </div>
                       </div>

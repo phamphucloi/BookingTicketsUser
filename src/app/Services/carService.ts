@@ -10,7 +10,7 @@ export class CarService{
     constructor(private _pathService: PathService,private _httpClient: HttpClient){}
 
     async getAllCar(){
-        return await lastValueFrom(this._httpClient.get(this._pathService.path() + 'car/findAll'));
+        return await lastValueFrom(this._httpClient.get(this._pathService.path() + 'car/GetAll'));
     }
 
     async addCar(car: Car){
