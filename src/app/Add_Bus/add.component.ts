@@ -17,10 +17,13 @@ export class AddBusComponent implements OnInit {
         private _CarService: CarService
     ) {}
 
+    id:number;
+
     addCar: FormGroup;
     cars: Car[]; 
 
     ngOnInit(): void {
+        this.id = 1;
         this.addCar = this._formBuilder.group({
             licensePlates: '',
             registrationDate: '',
