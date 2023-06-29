@@ -24,7 +24,7 @@
           <div class="col-lg-6">
             <div class="header-top-content">
               <div class="header-left">
-                <ul class="list-items">
+                <!-- <ul class="list-items">
                   <li>
                     <a href="#"
                       ><i class="la la-phone mr-1"></i>(123) 123-456</a
@@ -36,7 +36,7 @@
                       >trizen@example.com</a
                     >
                   </li>
-                </ul>
+                </ul> -->
               </div>
             </div>
           </div>
@@ -198,13 +198,9 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="menu-wrapper">
-              <a href="#" class="down-button"
-                ><i class="la la-angle-down"></i
-              ></a>
+              <a href="#" class="down-button"><i class="la la-angle-down"></i></a>
               <div class="logo">
-                <a href="index.html"
-                  ><img src="../assets/images/logo.png" alt="logo"
-                /></a>
+                <a href="index.html"><img src="../assets/images/logo.png" alt="logo" /></a>
                 <div class="menu-toggler">
                   <i class="la la-bars"></i>
                   <i class="la la-times"></i>
@@ -216,35 +212,102 @@
                 <nav>
                   <ul>
                     <li>
-                      <a href="#">Home <i class="la la-angle-down"></i></a>
-                      <ul class="dropdown-menu-item">
+                      <a [routerLink]="['/flight']">
+                        Home
+                      </a>
+                      <!-- <ul class="dropdown-menu-item">
                         <li><a href="index.html">Home - main</a></li>
-                        <li><a [routerLink]="['/homeBus']">Home - Bus</a></li>
+                        <li><a href="index2.html">Home - Hotel</a></li>
+                        <li><a href="index3.html">Home - Activity</a></li>
+                        <li><a href="index4.html">Home - Car</a></li>
+                        <li><a href="index5.html">Home - Cruise</a></li>
+                        <li><a href="index6.html">Home - Flight</a></li>
+                        <li>
+                          <a href="index7.html">Home - City Tour <span class="badge bg-2 text-white">New</span></a>
+                        </li>
+                      </ul> -->
+                    </li>
+                    <li>
+                      <a [routerLink]="['/homeBus']">
+                        Car
+                      </a>
+                    </li>
+                    <li>
+                      <a [routerLink]="['/contact']">
+                        Contact
+                      </a>
+                    </li>
+                    <li>
+                      <a [routerLink]="['/profile']">
+                        Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a [routerLink]="['/addBus']">
+                        Car registration
+                      </a>
+                    </li>
+                    
+                    <!-- <li>
+                      <a href="#">
+                        Cruise <i class="la la-angle-down"></i><button class="drop-menu-toggler" type="button"><i class="la la-angle-down"></i></button>
+                      </a>
+                      <ul class="dropdown-menu-item">
+                        <li><a href="cruises.html">Cruises</a></li>
+                        <li><a href="cruises-list.html">Cruise list</a></li>
+                        <li><a href="cruise-sidebar.html">Cruise Sidebar</a></li>
+                        <li><a href="cruise-details.html">Cruise details</a></li>
+                        <li><a href="cruise-booking.html">Cruise Booking</a></li>
+                        <li><a href="cruise-search-result.html">Cruise Search Result</a></li>
+                      </ul>
+                    </li> -->
+                    <li>
+                      <a href="#">
+                        Cart <i class="la la-angle-down"></i><button class="drop-menu-toggler" type="button"><i class="la la-angle-down"></i></button>
+                      </a>
+                      <ul class="dropdown-menu-item">
+                        <li><a [routerLink]="['/details']">Details</a></li>
+                        <li><a [routerLink]="['/booking']">Booking</a></li>
+                        <li><a [routerLink]="['/received']">Payment Received</a></li>
+                        <li><a [routerLink]="['/completed']">Payment Completed</a></li>
                       </ul>
                     </li>
-  
-                    <li>
-                      <a [routerLink]="['/addBus']">Add - Bus</a>
-                    </li>
-  
-                    <li>
-                      <a [routerLink]="['/details']">Details</a>
-                    </li>
-  
-                    <li>
-                      <a [routerLink]="['/cart']">Cart - booking</a>
-                    </li>
+                    <!-- <li>
+                      <a href="#">
+                        Hotel <i class="la la-angle-down"></i><button class="drop-menu-toggler" type="button"><i class="la la-angle-down"></i></button>
+                      </a>
+                      <ul class="dropdown-menu-item">
+                        <li><a href="hotel-grid.html">Hotel grid</a></li>
+                        <li><a href="hotel-list.html">Hotel list</a></li>
+                        <li><a href="hotel-sidebar.html">Hotel sidebar </a></li>
+                        <li><a href="hotel-single.html">Hotel details</a></li>
+                        <li><a href="hotel-booking.html">Hotel Booking</a></li>
+                        <li><a href="hotel-search-result.html">Hotel Search Result</a></li>
+                        <li>
+                          <a href="#">
+                            Rooms <i class="la la-plus"></i><button class="sub-menu-toggler" type="button"><i class="la la-plus"></i></button>
+                          </a>
+                          <ul class="sub-menu">
+                            <li><a href="room-list.html">Room List</a></li>
+                            <li><a href="room-grid.html">Room Grid</a></li>
+                            <li><a href="room-search-result.html">Search Result</a></li>
+                            <li><a href="room-search-result-list.html">Search Result list</a></li>
+                            <li><a href="room-details.html">Room Details</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li> -->
+                    
                   </ul>
                 </nav>
               </div>
               <!-- end main-menu-content -->
               <div class="nav-btn">
-                <a href="become-local-expert.html" class="theme-btn"
-                  >Become Local Expert</a
-                >
+                <a href="become-local-expert.html" class="theme-btn">Become Local Expert</a>
               </div>
               <!-- end nav-btn -->
             </div>
+            
             <!-- end menu-wrapper -->
           </div>
           <!-- end col-lg-12 -->
